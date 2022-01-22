@@ -13,6 +13,11 @@ Install the following packages:
 
 Follow the the steps in the [configuration guide](./deployment/configuration.md).
 
+### Generate ed25519 SSH key
+```sh
+ssh-keygen -t ed25519
+```
+
 ## Build
 
 ```sh
