@@ -2,6 +2,8 @@ vault:
   injector:
     enabled: false
   server:
+    dataStorage:
+      storageClass: longhorn
     ingress:
       enabled: true
       ingressClassName: nginx
@@ -13,3 +15,5 @@ vault:
         - secretName: vault-tls-certificate
           hosts:
             - *host
+    dev:
+      enabled: true  # TODO disable vault dev mode
